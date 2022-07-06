@@ -24,7 +24,7 @@
       </div>
       <div class="mb3">
         <label>Password Confirmation<span class="text-danger"></span></label>
-        <input type="password" class="form-control" name="password_confirmation">
+        <input type="password" class="form-control" name="password_confirm">
       </div>
       <div class="mb3">
         <button class="btn btn-primary">Register</button>
