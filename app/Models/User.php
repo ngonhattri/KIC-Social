@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use App\Models\User as Authenticable;
+use Illuminate\Foundation\Auth\User as Authenticable;
 
 class User extends Authenticable
 {
