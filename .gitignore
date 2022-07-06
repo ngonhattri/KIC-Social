@@ -13,5 +13,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-123456
-123456.pub
+ssh_key
+ssh_key.pub
