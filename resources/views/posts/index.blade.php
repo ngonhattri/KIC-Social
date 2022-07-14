@@ -38,7 +38,11 @@
           <td>{{$post->caption}}</td>
           <td>
             <a class="btn btn-sm btn-warning" href="{{ route('post.edit', $post) }}">Edit</a>
-            <?php echo($post) ?>
+            <form method="POST" action="{{ route('post.destroy', $post) }}" style="display: inline;" onsubmit="return confirm('Delete?')">
+              @csrf
+              @method("DELETE")
+              <button class="btn btn-sm btn-danger">Delete</button>
+            </form>
           </td>
         </tr>
         @endforeach
