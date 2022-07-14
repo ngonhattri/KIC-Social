@@ -10,7 +10,7 @@ class Post extends Model
     use HasFactory;
 
     protected $table = 'posts';
-    protected $primaryKey = 'user_id';
+    protected $primaryKey = 'id';
     protected $fillable = ['caption', 'user_id'];
 
     public function user() {

@@ -26,17 +26,19 @@
       <table class="table table-bordered table-striped table-hover m-0">
         <thead>
           <th>#</th>
-          <th>Username</th>
+          <th>User id</th>
           <th>Caption</th>
+          <th>Action</th>
         </thead>
         <?php $no = 1 ?>
         @foreach($posts as $post)
         <tr>
-          <td>{{$no++}}</td>
+          <td>{{$post->id}}</td>
           <td>{{$post->user_id}}</td>
           <td>{{$post->caption}}</td>
           <td>
-            <a class="btn btn-warning" href="{{ route('customer.edit', $customer)}}">Edit</a>
+            <a class="btn btn-sm btn-warning" href="{{ route('post.edit', $post) }}">Edit</a>
+            <?php echo($post) ?>
           </td>
         </tr>
         @endforeach

@@ -39,7 +39,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        echo(auth()->id());
         $post = new Post([
             'caption' => $request->caption,
             'user_id' => auth()->id(),
@@ -67,7 +66,9 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        $data['title'] = 'Edit Post';
+        $data['post'] = $post;
+        return view('posts.edit', $data);
     }
 
     /**
@@ -79,7 +80,10 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        echo($request);
+        $post->caption = $request->caption;
+        $post->save();
+        return redirect('post')->with('success', 'Post Updated Successfully');
     }
 
     /**
