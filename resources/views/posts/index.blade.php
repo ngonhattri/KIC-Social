@@ -43,6 +43,7 @@
               @method("DELETE")
               <button class="btn btn-sm btn-danger">Delete</button>
             </form>
+            <a class="btn btn-sm btn-warning" href="{{ route('post.edit', $post) }}">Comment</a>
           </td>
         </tr>
         @endforeach
