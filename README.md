@@ -7,8 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Web開発の夏休み課題
+# Web 開発の夏休み課題
+
 ## プロダクトバックログ（機能一覧）
-- アカウント管理
-    - ログインページ
-    - 登録ンページ
+
+-   アカウント管理
+    -   ログイン機能:heavy_check_mark:
+    -   新規登録機能:heavy_check_mark:
+        -   DB にパスワードハッシュする:heavy_check_mark:
+    -   ログアウト機能:heavy_check_mark:
+    -   パスワード変更機能:heavy_check_mark:
+    -   プロフィル表示
+-   投稿機能
+    -   各ユーザーにより投稿を DB に書き込み:heavy_check_mark:
+    -   投稿を変更する:heavy_check_mark:
+    -   投稿を削除する:heavy_check_mark:
+        -   自分の投稿のみ削除・他人の投稿削除できない
+    -   投稿を検索する:heavy_check_mark:
